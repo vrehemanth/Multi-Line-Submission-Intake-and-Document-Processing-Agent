@@ -1,0 +1,18 @@
+{
+  "document_type": "fleet_schedule",
+  "submission_id": "SUB-001",
+  "vehicle_count": 1,
+  "vehicles": [
+    {
+      "vin": "1HGBH41JXMN109186",
+      "year": 2023,
+      "make": "Freightliner",
+      "model": "Cascadia",
+      "type": "tractor",
+      "value": 145000,
+      "garaging_zip": "90001"
+    }
+  ],
+  "radius_of_operation": "500_miles",
+  "states_operated": ["CA", "NV", "AZ", "OR", "WA"]
+}

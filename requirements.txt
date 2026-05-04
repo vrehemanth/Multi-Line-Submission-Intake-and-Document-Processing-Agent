@@ -1,0 +1,10 @@
+google-adk
+google-genai
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-exporter-otlp
+arize-otel
+python-dotenv
+fastapi
+uvicorn
+httpx

@@ -1,0 +1,17 @@
+{
+  "document_type": "property_schedule",
+  "submission_id": "SUB-004",
+  "properties": [
+    {
+      "address": "500 Storage Way, Newark, NJ 07102",
+      "construction_type": "masonry_non_combustible",
+      "occupancy": "storage",
+      "square_footage": 50000,
+      "year_built": 2010,
+      "building_value": 5000000,
+      "contents_value": 1500000,
+      "protection_class": 4,
+      "sprinkler": true
+    }
+  ]
+}

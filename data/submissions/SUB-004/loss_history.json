@@ -1,0 +1,9 @@
+{
+  "auto_claims": [
+    {"date": "2022-01-15", "amount": 3500}
+  ],
+  "property_claims": [
+    {"date": "2023-04-20", "amount": 1200}
+  ],
+  "combined_loss_ratio": 0.45
+}

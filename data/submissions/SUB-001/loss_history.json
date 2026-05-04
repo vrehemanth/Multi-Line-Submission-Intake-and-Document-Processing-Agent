@@ -1,0 +1,9 @@
+{
+  "document_type": "loss_history",
+  "submission_id": "SUB-001",
+  "claim_count": 12,
+  "total_incurred": 892000,
+  "largest_loss": 185000,
+  "loss_years": [2023, 2024, 2025],
+  "claim_descriptions": ["jackknife incident", "fender bender"]
+}

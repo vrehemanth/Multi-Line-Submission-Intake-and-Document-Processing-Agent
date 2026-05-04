@@ -1,0 +1,17 @@
+{
+  "document_type": "property_schedule",
+  "submission_id": "SUB-002",
+  "properties": [
+    {
+      "address": "1200 Industrial Blvd, Chicago, IL 60601",
+      "construction_type": "fire_resistive",
+      "occupancy": "warehouse_distribution",
+      "building_area": 50000,
+      "square_footage": 75000,
+      "year_built": 2005,
+      "contents_value": 3200000,
+      "protection_class": 3,
+      "sprinkler": true
+    }
+  ]
+}

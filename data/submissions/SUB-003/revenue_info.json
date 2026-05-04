@@ -1,0 +1,10 @@
+{
+  "document_type": "revenue_info",
+  "submission_id": "SUB-003",
+  "annual_revenue": 12000000,
+  "revenue_by_segment": {
+    "it_consulting": 8000000,
+    "management_consulting": 4000000
+  },
+  "revenue_trend": "growing"
+}

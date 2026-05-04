@@ -1,0 +1,8 @@
+{
+  "document_type": "building_details",
+  "submission_id": "SUB-002",
+  "address": "1200 Industrial Blvd, Chicago, IL 60601",
+  "roof_type": "flat",
+  "alarm_system": true,
+  "fenced_yard": true
+}

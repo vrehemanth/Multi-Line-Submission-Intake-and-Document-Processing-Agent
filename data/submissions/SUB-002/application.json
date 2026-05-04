@@ -1,0 +1,17 @@
+{
+  "document_type": "application",
+  "submission_id": "SUB-002",
+  "insured_name": "Midwest Distribution Corp.",
+  "business_type": "distribution",
+  "industry_sic": "4225",
+  "annual_revenue": 25000000,
+  "employee_count": 120,
+  "effective_date": "2026-08-01",
+  "requested_coverage": ["commercial_property"],
+  "requested_limits": {
+    "building": 8500000,
+    "contents": 3200000
+  },
+  "years_in_business": 10,
+  "prior_carrier": "Travelers"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "router",
+  "description": "Routes submissions and generates human summaries",
+  "url": "http://localhost:8013",
+  "port": 8013,
+  "version": "1.0.0",
+  "skills": [
+    {
+      "id": "router_agent",
+      "name": "Router Agent",
+      "description": "Handles all routing and summary tasks agentically",
+      "handler_module": "agents.router",
+      "handler_fn": "router"
+    }
+  ]
+}

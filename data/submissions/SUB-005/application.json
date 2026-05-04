@@ -1,0 +1,16 @@
+{
+  "document_type": "application",
+  "submission_id": "SUB-005",
+  "insured_name": "GreenLeaf Services",
+  "business_type": "landscaping",
+  "industry_sic": "0782",
+  "employee_count": 45,
+  "effective_date": "2026-11-01",
+  "requested_coverage": ["general_liability"],
+  "requested_limits": {
+    "combined_single_limit": 1000000,
+    "aggregate": 2000000
+  },
+  "years_in_business": 8,
+  "prior_carrier": "Chubb"
+}

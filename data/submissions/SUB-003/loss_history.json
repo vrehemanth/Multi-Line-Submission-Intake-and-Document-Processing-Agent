@@ -1,0 +1,8 @@
+{
+  "claims": [
+    {"date": "2021-08-10", "type": "Slip and Fall", "amount": 25000, "status": "Settled"},
+    {"date": "2022-12-05", "type": "Property Damage", "amount": 8500, "status": "Closed"}
+  ],
+  "safety_rating": "A",
+  "employee_training": "Quarterly safety drills implemented"
+}

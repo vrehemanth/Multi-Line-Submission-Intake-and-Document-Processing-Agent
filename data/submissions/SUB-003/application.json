@@ -1,0 +1,17 @@
+{
+  "document_type": "application",
+  "submission_id": "SUB-003",
+  "insured_name": "NovaTech Consulting",
+  "business_type": "consulting",
+  "industry_sic": "8742",
+  "annual_revenue": 12000000,
+  "employee_count": 80,
+  "effective_date": "2026-09-01",
+  "requested_coverage": ["general_liability"],
+  "requested_limits": {
+    "combined_single_limit": 2000000,
+    "aggregate": 4000000
+  },
+  "years_in_business": 5,
+  "prior_carrier": "Hartford"
+}

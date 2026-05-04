@@ -1,0 +1,17 @@
+{
+  "document_type": "application",
+  "submission_id": "SUB-004",
+  "insured_name": "Metro Logistics & Storage",
+  "business_type": "logistics_and_storage",
+  "industry_sic": "4225",
+  "annual_revenue": 30000000,
+  "employee_count": 200,
+  "effective_date": "2026-10-01",
+  "requested_coverage": ["commercial_auto", "commercial_property"],
+  "requested_limits": {
+    "combined_single_limit": 1000000,
+    "building": 5000000
+  },
+  "years_in_business": 12,
+  "prior_carrier": "Liberty Mutual"
+}

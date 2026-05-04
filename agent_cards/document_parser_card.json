@@ -1,0 +1,30 @@
+{
+  "name": "document_parser",
+  "description": "Extracts structured data from insurance submission documents including applications, schedules, and loss runs",
+  "url": "http://localhost:8011",
+  "port": 8011,
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "skills": [
+    {
+      "id": "extract_fields",
+      "name": "Extract Fields",
+      "description": "Extract structured fields from a document file",
+      "handler_module": "agents.document_parser",
+      "handler_fn": "extract_fields",
+      "arg_map": [
+        "file_path",
+        "document_type"
+      ]
+    }
+  ],
+  "outputs": {
+    "document_type": "string",
+    "extracted_fields": "object",
+    "confidence": "number",
+    "notes": "string"
+  }
+}

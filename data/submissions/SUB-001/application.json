@@ -1,0 +1,17 @@
+{
+  "document_type": "application",
+  "submission_id": "SUB-001",
+  "insured_name": "Pacific Freight Lines Inc.",
+  "business_type": "trucking_and_logistics",
+  "industry_sic": "4213",
+  "annual_revenue": 45000000,
+  "employee_count": 350,
+  "effective_date": "2026-07-01",
+  "requested_coverage": ["commercial_auto"],
+  "requested_limits": {
+    "combined_single_limit": 1000000,
+    "aggregate": 5000000
+  },
+  "years_in_business": 18,
+  "prior_carrier": "Old Republic Insurance"
+}

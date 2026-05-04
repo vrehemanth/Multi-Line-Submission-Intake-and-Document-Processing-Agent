@@ -1,0 +1,8 @@
+{
+  "claims": [
+    {"date": "2022-05-15", "type": "Fire", "amount": 15000, "status": "Closed"},
+    {"date": "2023-11-02", "type": "Water Leak", "amount": 4200, "status": "Closed"}
+  ],
+  "total_claims": 2,
+  "last_inspection_date": "2023-01-20"
+}

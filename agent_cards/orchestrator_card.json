@@ -1,0 +1,23 @@
+{
+  "name": "orchestrator",
+  "description": "Main agent that coordinates the intake pipeline and handles user queries",
+  "url": "http://localhost:8000",
+  "port": 8000,
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": true
+  },
+  "skills": [
+    {
+      "id": "process_submission",
+      "name": "Process Submission",
+      "description": "Run the full automated intake pipeline for a submission ID"
+    },
+    {
+      "id": "get_status",
+      "name": "Get Submission Status",
+      "description": "Query the status of a previously processed submission"
+    }
+  ]
+}
