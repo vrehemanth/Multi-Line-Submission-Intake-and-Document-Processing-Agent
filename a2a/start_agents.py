@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 start_agents.py
-Launches all A2A agent servers using the single generic agent_server.py.
-Run this BEFORE demo_day7.py or adk web.
+Launches all A2A agent servers using the single generic server.py.
+Run this BEFORE tests/day7.py or adk web.
 
 Usage:
     python start_agents.py
@@ -45,9 +45,9 @@ def main():
     for card_path in CARDS:
         full_path = os.path.join(root, card_path)
         print(f"\n[->] Starting server from {card_path}...")
-        ## Launch agent_server.py as a background process with the card file as input, and remember the handle so we can check on it and stop it later.
+        ## Launch server.py as a background process with the card file as input, and remember the handle so we can check on it and stop it later.
         proc = subprocess.Popen(
-            [sys.executable, os.path.join(root, "agent_server.py"), full_path],
+            [sys.executable, os.path.join(root, "server.py"), full_path],
             cwd=root
         )
         processes.append((card_path, proc))
@@ -72,7 +72,7 @@ def main():
 
     if all_up:
         print("\n[OK] All agents ready! Run in another terminal:")
-        print("      python demo_day7.py")
+        print("      python tests/day7.py")
         print("      adk web")
     else:
         print("\n[!] Some agents failed. Check the output above.")

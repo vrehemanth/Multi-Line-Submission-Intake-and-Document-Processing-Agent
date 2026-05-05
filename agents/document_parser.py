@@ -4,7 +4,7 @@ import time
 from google.adk import Agent
 from google.genai import Client
 from prompts.prompt_manager import PromptManager
-from arize_setup import get_tracer
+from telemetry.arize_setup import get_tracer
 from opentelemetry.trace import Status, StatusCode
 
 tracer = get_tracer()
@@ -89,7 +89,7 @@ def extract_fields(file_path: str, document_type: str) -> dict:
 # ── ADK Agent Definition (Spec Section 7.2) ─────────────────────────────────
 # Defines this file as a formal ADK Agent with registered tools.
 # Used by the Orchestrator as a sub_agent (MVP pattern).
-# Also accessible via A2A HTTP through agent_server.py (Stretch pattern).
+# Also accessible via A2A HTTP through a2a/server.py (Stretch pattern).
 document_parser = Agent(
     name="document_parser",
     model="gemini-2.5-flash",

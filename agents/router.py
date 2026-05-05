@@ -3,7 +3,7 @@ import os
 from google.adk import Agent
 from google.genai import Client
 from prompts.prompt_manager import PromptManager
-from arize_setup import get_tracer
+from telemetry.arize_setup import get_tracer
 from opentelemetry.trace import Status, StatusCode
 
 tracer = get_tracer()

@@ -5,7 +5,7 @@ import threading
 import time
 from datetime import datetime
 from google.adk import Agent
-from arize_setup import setup_arize, get_tracer
+from telemetry.arize_setup import setup_arize, get_tracer
 from opentelemetry.trace import Status, StatusCode
 
 # Initialize Arize OTel Tracing BEFORE importing child agents
@@ -13,7 +13,7 @@ setup_arize()
 tracer = get_tracer()
 
 from profiles.user_profile_manager import UserProfileManager
-from .a2a_client import A2AClient
+from a2a.client import A2AClient
 
 def process_submission(submission_id: str, user_id: str = "default_user") -> dict:
     """

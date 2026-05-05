@@ -34,8 +34,9 @@ from google.genai.types import Content, Part
 
 load_dotenv()
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from arize_setup import setup_arize
+from telemetry.arize_setup import setup_arize
 setup_arize()
 
 tracer = trace.get_tracer("a2a-host")
