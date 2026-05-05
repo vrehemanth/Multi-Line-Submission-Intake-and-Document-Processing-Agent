@@ -78,11 +78,12 @@ python a2a/start_agents.py
 ```
 *This will launch 3 servers on ports 8011, 8012, and 8013.*
 
-### Step 2: Run the Demo Pipeline
-In a new terminal, run the Day 7 validation script to process the sample batch.
+### Step 2: Launch the Agent Interface
+In a new terminal, launch the ADK web interface to interact with the Orchestrator.
 ```bash
-python tests/day7.py
+adk web
 ```
+*Alternatively, you can run the batch processing script: `python tests/day7.py`*
 
 ### Step 3: View Traces
 If configured, visit your **Arize AX** dashboard to see the full execution trace of the multi-agent orchestration.

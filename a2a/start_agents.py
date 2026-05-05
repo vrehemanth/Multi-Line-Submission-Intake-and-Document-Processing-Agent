@@ -72,8 +72,8 @@ def main():
 
     if all_up:
         print("\n[OK] All agents ready! Run in another terminal:")
-        print("      python tests/day7.py")
         print("      adk web")
+        print("      python tests/day7.py (for batch demo)")
     else:
         print("\n[!] Some agents failed. Check the output above.")
 
