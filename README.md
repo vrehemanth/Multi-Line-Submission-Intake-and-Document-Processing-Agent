@@ -99,5 +99,32 @@ If configured, visit your **Arize AX** dashboard to see the full execution trace
 
 ---
 
-## 📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 🔄 Submission & Document Lifecycle
+
+The system is designed to handle "bundles" of documents rather than single files. A typical lifecycle for a submission (e.g., `SUB-001`) follows these steps:
+
+1. **Ingestion**: The Orchestrator identifies all documents in the `data/submissions/{ID}/` folder (supporting PDF and JSON formats).
+2. **Parallel Parsing (A2A Fan-out)**:
+   - The Orchestrator triggers the **Document Parser** via A2A HTTP calls.
+   - For a submission with 5 documents, all 5 are processed in **parallel** across separate threads/servers, drastically reducing total processing time.
+3. **Data Synthesis**: The extracted fields from all documents are aggregated into a single unified data structure.
+4. **Validation & Classification**:
+   - The **Validator** analyzes the aggregated data to determine the primary Line of Business.
+   - It cross-references the data against business rules to flag missing critical fields (e.g., missing "Year Built" for a Property policy).
+5. **Intelligent Routing**: The **Router** evaluates the risk profile and assigns it to the appropriate underwriting queue (e.g., "High Priority - Specialty").
+6. **Final Report Generation**: A comprehensive JSON report is saved to `data/processed/`, containing the full extraction, validation results, and a natural language summary tailored to the user's role.
+
+---
+
+## 💡 Why This Project?
+
+This system addresses the "blank page" problem in commercial insurance underwriting. By automating the extraction, validation, and summarization of complex submission bundles, it reduces the manual effort required to screen a submission from hours to seconds.
+
+### Technical Highlights
+- **State-of-the-Art LLMs**: Utilizes `gemini-2.5-pro` for complex orchestration and `gemini-2.5-flash` for high-speed document extraction.
+- **Microservices Architecture**: The A2A (Agent-to-Agent) pattern ensures that each agent can be scaled, updated, or replaced independently without breaking the pipeline.
+- **Enterprise Observability**: Native integration with OpenTelemetry and Arize AX provides production-grade monitoring of "agentic reasoning" and cost/latency metrics.
+- **Persona-Driven Design**: The system doesn't just output data; it adapts its communication style based on whether a Clerk (detail-oriented) or a Manager (decision-oriented) is viewing the results.
+
+---
+
